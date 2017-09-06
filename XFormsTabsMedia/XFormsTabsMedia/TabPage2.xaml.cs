@@ -16,7 +16,11 @@ namespace XFormsTabsMedia
         {
             InitializeComponent();
 
-            this.Icon = "wishlist_tab";
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                Icon = new FileImageSource { File = "wishlist_tab.png" };
+            }
+
             this.Title = "Tab2";
         }
     }

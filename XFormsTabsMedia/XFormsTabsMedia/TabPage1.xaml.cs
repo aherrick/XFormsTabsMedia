@@ -20,7 +20,11 @@ namespace XFormsTabsMedia
         {
             InitializeComponent();
 
-            this.Icon = "collections_tab";
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                Icon = new FileImageSource { File = "collections_tab.png" };
+            }
+
             this.Title = "Tab1";
         }
 
