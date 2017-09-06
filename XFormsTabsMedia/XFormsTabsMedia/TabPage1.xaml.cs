@@ -26,6 +26,23 @@ namespace XFormsTabsMedia
             }
 
             this.Title = "Tab1";
+
+            var data = new List<DataModel>
+            {
+                new DataModel()
+                {
+                    Name = "Andrew",
+                    Description = "Awesome"
+                },
+
+                new DataModel()
+                {
+                    Name = "Matthew",
+                    Description = "Money"
+                }
+            };
+
+            lstView.ItemsSource = data;
         }
 
         protected override async void OnAppearing()

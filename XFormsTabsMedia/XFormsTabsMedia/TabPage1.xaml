@@ -3,8 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XFormsTabsMedia.TabPage1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+        <StackLayout VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand">
+
+            <SearchBar x:Name="search"
+                  Placeholder="Type to search" />
+
+            <ListView x:Name ="lstView">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
