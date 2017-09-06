@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Plugin.Permissions": "2.0.1",
     "Xam.Plugin.Media": "3.0.2-beta82",
     "Xamarin.Forms": "2.4.0.269-pre2"
   },
